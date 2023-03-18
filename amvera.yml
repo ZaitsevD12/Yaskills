@@ -5,6 +5,6 @@ meta:
     version: 18
 
 run:
-  command: node index
+  command: node app
   scriptName: index.js
   containerPort: 3000

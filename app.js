@@ -1,4 +1,3 @@
-<meta name="yandex-verification" content="88853bef697baa27" />
 
 const express = require('express');
 
