@@ -10,8 +10,9 @@ app.listen(3000, (req, res) => {
 
 app.use(morgan('dev'));
 
-app.use((req, res) => {
+app.use((req, res, next) => {
     console.log(req.body);
+    next();
 });
 
 app.get('/', (req, res) => {
