@@ -9,6 +9,6 @@ app.listen(3000, (req, res) => {
 
 app.get('/', (req, res) => {
 
-    res.sendFile('./src/index.html');
+    res.sendFile('./src/index.html', { root: __dirname });
   
 });
