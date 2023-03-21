@@ -70,7 +70,7 @@ app.use(morgan('dev'));
 
 app.use((req, res) => {
   const data = req.body;
-  if(data.nlu.token == "привет"){
+  if(data.request.nlu.token == "привет"){
     return {
       "response": {
         "text": 'Привет! Со мной ты можешь узнать о ближайших фронтенд-событиях в России.',
