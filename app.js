@@ -62,13 +62,14 @@ const json = `{
 
 app.use(morgan('dev'));
 
-app.use((req, res, next) => {
-    const data = req.body;
-    console.log(data);
-    next();
-});
+// app.use((req, res, next) => {
+//     const data = req.body;
+//     console.log(data);
+//     next();
+// });
 
 app.use((req, res) => {
+  const data = req.body;
   if(data.request.command == "привет"){
     return {
       "response": {
